@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AFZAL EHSAN — Director | Arshu Studio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,400;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Sleek Loading Overlay -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-content">
+      <div class="loader-brand">
+        <span class="brand-icon">❖</span> ARSHU STUDIO
+      </div>
+      <div class="loader-spinner"></div>
+      <div class="loader-title">INITIALIZING CINEMATIC EXPERIENCE</div>
+      <div class="loader-progress-bar-bg">
+        <div id="loader-bar" class="loader-progress-bar"></div>
+      </div>
+      <div id="loader-text" class="loader-percentage">0%</div>
+      <div class="loader-subtext">AFZAL EHSAN — Web Developer & UI/UX Specialist</div>
+    </div>
+  </div>
+
+  <!-- Pinned Background Canvas & Dark Vignette -->
+  <div class="canvas-container">
+    <canvas id="animation-canvas"></canvas>
+    <div class="canvas-vignette"></div>
+  </div>
+
+  <!-- Top Progress Bar -->
+  <div class="top-progress-container">
+    <div id="scroll-progress-bar" class="top-progress-fill"></div>
+  </div>
+
+  <!-- Ambient HUD Overlay -->
+  <div class="hud-overlay">
+    <div class="hud-badge hud-left">
+      <span class="hud-dot"></span>
+      <span id="hud-frame-counter">FRAME 001 / 240</span>
+    </div>
+    
+    <div class="hud-badge hud-right">
+      <span id="hud-scroll-pct">0% SCROLLED</span>
+    </div>
+  </div>
+
+  <!-- Main Floating Header / Navbar -->
+  <header class="navbar-header">
+    <nav class="navbar">
+      <a href="#" class="nav-logo">
+        <span class="logo-mark">❖</span>
+        <span class="logo-text">AFZAL EHSAN</span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#process" class="nav-link">Process</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://wa.me/918303283392?text=Hello%20Afzal%2C%20I%20came%20across%20your%20portfolio%20website%20%28Arshu%20Studio%29.%20I%20am%20interested%20in%20collaborating%20on%20a%20web%20development%20and%20UI%2FUX%20design%20project%20with%20you.%20Let%27s%20connect%20and%20discuss%20the%20project%20requirements%2C%20timeline%2C%20and%20scope." target="_blank" rel="noopener noreferrer" class="btn btn-pill btn-glow">
+          Get Started
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Website Content Overlay -->
+  <main id="website-content" class="content-wrapper">
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="hero-section">
+      <div class="hero-container">
+        
+        <div class="hero-badge reveal">
+          <span class="badge-globe">🌐</span>
+          <span>Web Developer & UI/UX Specialist — Lucknow, India</span>
+        </div>
+
+        <h1 class="hero-title reveal">
+          Technology <br>
+          Crafted for All <br>
+          <span class="title-highlight">Not <em class="serif-italic">Machines</em></span>
+        </h1>
+
+        <p class="hero-subtitle reveal">
+          Hi, I'm <strong>Afzal Ehsan</strong>. I create clear, intuitive, and accessible digital experiences shaped by real human behavior and modern web engineering.
+        </p>
+
+        <div class="hero-cta-group reveal">
+          <a href="https://wa.me/918303283392?text=Hello%20Afzal%2C%20I%20came%20across%20your%20portfolio%20website%20%28Arshu%20Studio%29.%20I%20am%20interested%20in%20collaborating%20on%20a%20web%20development%20and%20UI%2FUX%20design%20project%20with%20you.%20Let%27s%20connect%20and%20discuss%20the%20project%20requirements%2C%20timeline%2C%20and%20scope." target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-orange">
+            Get started <span class="arrow-icon">→</span>
+          </a>
+          
+          <div class="hero-happy-clients">
+            <div class="avatar-group">
+              <div class="avatar av-1"></div>
+              <div class="avatar av-2"></div>
+              <div class="avatar av-3"></div>
+            </div>
+            <div class="clients-info">
+              <span class="client-count">Arshu Studio Projects</span>
+              <span class="client-stars">★★★★★</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Stats Badges -->
+        <div class="hero-stats-grid">
+          <div class="stat-card glass-card reveal">
+            <div class="stat-number">100% <span class="stat-sparkle">✦</span></div>
+            <div class="stat-label">Custom Code & UI/UX</div>
+          </div>
+          <div class="stat-card glass-card reveal">
+            <div class="stat-number">BCA <span class="stat-sparkle">✦</span></div>
+            <div class="stat-label">University of Lucknow</div>
+          </div>
+        </div>
+
+        <!-- Tech Stack Logos Bar -->
+        <div class="partner-logos-bar reveal">
+          <span class="partner-label">Tech Stack</span>
+          <div class="logos-flex">
+            <span class="logo-item">⚡ React & Next.js</span>
+            <span class="logo-item">📱 Flutter</span>
+            <span class="logo-item">🎨 Figma UI/UX</span>
+            <span class="logo-item">🟢 Supabase</span>
+            <span class="logo-item">🤖 n8n Automation</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 2. ABOUT & DIRECTOR SECTION (WITH USER PHOTO) -->
+    <section id="about" class="section-padding">
+      <div class="container">
+        
+        <div class="section-tag reveal">• About The Founder</div>
+        <h2 class="section-title reveal">Meet The Director <br>Behind The Work</h2>
+
+        <div class="about-grid">
+          <!-- Left Column: User Photo -->
+          <div class="about-portrait-card glass-card reveal">
+            <div class="portrait-image-holder custom-user-photo">
+              <div class="portrait-glow-overlay"></div>
+              <div class="portrait-tag">Director</div>
+            </div>
+          </div>
+
+          <!-- Right Column: Info & Stats -->
+          <div class="about-info-col">
+            <p class="about-lead reveal">
+              At <strong>Arshu Studio</strong>, led by <strong>Afzal Ehsan</strong>, I bring together modern web development, UI/UX design, and AI automations to craft bold, thoughtful digital experiences made with precision.
+            </p>
+
+            <div class="about-badges-row reveal">
+              <div class="pill-badge">
+                <span>💻 React, Next.js & Flutter</span>
+              </div>
+              <div class="pill-badge">
+                <span>📍 Lucknow, Uttar Pradesh</span>
+              </div>
+            </div>
+
+            <div class="about-stats-cards">
+              <div class="glass-card stat-box reveal">
+                <div class="stat-big">Arshu</div>
+                <div class="stat-sub font-muted font-mono">STUDIO</div>
+                <div class="stat-partners-mini">
+                  <span>Web Dev</span> • <span>UI/UX</span> • <span>Supabase</span> • <span>SEO</span>
+                </div>
+                <a href="https://wa.me/918303283392?text=Hello%20Afzal%2C%20I%20came%20across%20your%20portfolio%20website%20%28Arshu%20Studio%29.%20I%20am%20interested%20in%20collaborating%20on%20a%20web%20development%20and%20UI%2FUX%20design%20project%20with%20you.%20Let%27s%20connect%20and%20discuss%20the%20project%20requirements%2C%20timeline%2C%20and%20scope." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-orange mt-12">
+                  Book a call
+                </a>
+              </div>
+
+              <div class="glass-card stat-box fact-box reveal">
+                <div class="fact-header">
+                  <span class="fact-tag">Arshu® Fact</span>
+                  <span class="fact-num font-mono">01/04</span>
+                </div>
+                <div class="stat-big stat-orange">BCA</div>
+                <div class="stat-sub">University of Lucknow Student & Independent Developer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. FEATURED PROJECTS SHOWCASE (FROM RESUME) -->
+    <section id="projects" class="section-padding">
+      <div class="container">
+        
+        <div class="center-header">
+          <div class="section-tag reveal">• Featured Projects</div>
+          <h2 class="section-title reveal">Crafted Projects. <br>Real Impact.</h2>
+          <p class="section-subtitle reveal">
+            Key web, mobile, and automation products engineered with clean architecture, Supabase backend, and high-fidelity UI/UX.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: LakhnaviSewa -->
+          <div class="project-card glass-card reveal">
+            <div class="project-header">
+              <span class="project-cat font-mono">MOBILE & WEB APP</span>
+              <span class="project-badge">Flutter + Supabase</span>
+            </div>
+            <h3 class="project-title">LakhnaviSewa — Local Service Marketplace</h3>
+            <p class="project-desc">
+              Designed and developed a Flutter-based service marketplace with user authentication, booking flows, profile management, emergency service directory, and PostgreSQL/Supabase backend.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Supabase</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+          </div>
+
+          <!-- Project 2: IWAYMALL -->
+          <div class="project-card glass-card reveal">
+            <div class="project-header">
+              <span class="project-cat font-mono">E-COMMERCE PLATFORM</span>
+              <span class="project-badge">Next.js + SEO</span>
+            </div>
+            <h3 class="project-title">IWAYMALL — E-commerce Platform</h3>
+            <p class="project-desc">
+              Engineered responsive website interfaces, UI/UX design systems, technical SEO auditing, and e-commerce growth workflows built on Next.js and Supabase data infrastructure.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Next.js</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">SEO Audit</span>
+              <span class="tech-tag">UI/UX</span>
+            </div>
+          </div>
+
+          <!-- Project 3: EduGuard AI -->
+          <div class="project-card glass-card reveal">
+            <div class="project-header">
+              <span class="project-cat font-mono">AI SCHOOL ERP</span>
+              <span class="project-badge">Product Design</span>
+            </div>
+            <h3 class="project-title">EduGuard AI — School Management Concept</h3>
+            <p class="project-desc">
+              Architected product structure, digital workflows, and interactive UI concept prototypes for an AI-powered next-generation school ERP management system.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">Figma</span>
+              <span class="tech-tag">AI Workflows</span>
+              <span class="tech-tag">ERP Interface</span>
+              <span class="tech-tag">Design System</span>
+            </div>
+          </div>
+
+          <!-- Project 4: WhatsApp Automation -->
+          <div class="project-card glass-card reveal">
+            <div class="project-header">
+              <span class="project-cat font-mono">AUTOMATION WORKFLOW</span>
+              <span class="project-badge">n8n + OCR</span>
+            </div>
+            <h3 class="project-title">WhatsApp Product Data Automation</h3>
+            <p class="project-desc">
+              Automated structured product-data processing using OCR, regex rule engines, Supabase storage, Google Sheets API, and n8n webhook integrations.
+            </p>
+            <div class="tech-tags">
+              <span class="tech-tag">n8n</span>
+              <span class="tech-tag">OCR</span>
+              <span class="tech-tag">Webhooks</span>
+              <span class="tech-tag">Supabase</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. TECHNICAL SKILLS MATRIX (FROM RESUME) -->
+    <section id="skills" class="section-padding">
+      <div class="container">
+        
+        <div class="section-tag reveal">• Technical Capabilities</div>
+        <h2 class="section-title reveal">Full Stack Web & <br>UI/UX Expertise</h2>
+        <p class="section-subtitle reveal">
+          Comprehensive skillset spanning modern frontend frameworks, backend storage, automation tools, and digital marketing.
+        </p>
+
+        <div class="skills-grid">
+          
+          <div class="skill-category-card glass-card reveal">
+            <div class="skill-icon font-orange">💻</div>
+            <h3 class="skill-cat-title">Frontend & Web</h3>
+            <ul class="skill-list">
+              <li>✓ React.js & Next.js</li>
+              <li>✓ Flutter (Cross-platform)</li>
+              <li>✓ HTML5, CSS3, JavaScript</li>
+              <li>✓ Component-Based Architecture</li>
+              <li>✓ Responsive Web Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card glass-card reveal">
+            <div class="skill-icon font-orange">🎨</div>
+            <h3 class="skill-cat-title">UI/UX & Design</h3>
+            <ul class="skill-list">
+              <li>✓ Figma Wireframing</li>
+              <li>✓ High-Fidelity Prototyping</li>
+              <li>✓ Design Systems Creation</li>
+              <li>✓ User-Centered Interface</li>
+              <li>✓ Mobile App UX Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card glass-card reveal">
+            <div class="skill-icon font-orange">⚡</div>
+            <h3 class="skill-cat-title">Backend & Cloud</h3>
+            <ul class="skill-list">
+              <li>✓ Supabase & PostgreSQL</li>
+              <li>✓ n8n & API Automation</li>
+              <li>✓ Git / GitHub Version Control</li>
+              <li>✓ Vercel & Cloudflare</li>
+              <li>✓ RLS & Authentication</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card glass-card reveal">
+            <div class="skill-icon font-orange">📈</div>
+            <h3 class="skill-cat-title">SEO & Growth</h3>
+            <ul class="skill-list">
+              <li>✓ Technical & On-Page SEO</li>
+              <li>✓ SEO Auditing & Keyword Research</li>
+              <li>✓ Performance Optimization</li>
+              <li>✓ Content Strategy</li>
+              <li>✓ Social Media Marketing</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. PROCESS & ROADMAP SECTION -->
+    <section id="process" class="section-padding">
+      <div class="container">
+        
+        <h2 class="section-title reveal">A Simple, Human-<br>Centered Way To Work</h2>
+        <p class="section-subtitle reveal">
+          Clear and collaborative process designed to keep things transparent, efficient, and focused on real human needs.
+        </p>
+
+        <div class="process-accordion">
+          
+          <div class="process-step glass-card active reveal">
+            <div class="step-header">
+              <div class="step-num font-mono">01</div>
+              <div class="step-title-group">
+                <h3 class="step-title">Discovery & Strategy</h3>
+                <p class="step-summary">Understanding brand goals, user journeys, wireframing, and concept validation.</p>
+              </div>
+            </div>
+            <div class="step-tags">
+              <span class="step-tag">Research</span>
+              <span class="step-tag">User Insights</span>
+              <span class="step-tag">Wireframing</span>
+              <span class="step-tag">Concept Validation</span>
+            </div>
+          </div>
+
+          <div class="process-step glass-card reveal">
+            <div class="step-header">
+              <div class="step-num font-mono">02</div>
+              <div class="step-title-group">
+                <h3 class="step-title">Design & Code</h3>
+                <p class="step-summary">Transforming strategy into Figma high-fidelity UI design and Next.js/React clean code.</p>
+              </div>
+            </div>
+            <div class="step-tags">
+              <span class="step-tag">Figma UI/UX</span>
+              <span class="step-tag">React / Next.js</span>
+              <span class="step-tag">Supabase Backend</span>
+              <span class="step-tag">Responsive UI</span>
+            </div>
+          </div>
+
+          <div class="process-step glass-card reveal">
+            <div class="step-header">
+              <div class="step-num font-mono">03</div>
+              <div class="step-title-group">
+                <h3 class="step-title">SEO & Deployment</h3>
+                <p class="step-summary">Technical SEO auditing, performance tuning, Vercel deployment, and ongoing support.</p>
+              </div>
+            </div>
+            <div class="step-tags">
+              <span class="step-tag">Technical SEO</span>
+              <span class="step-tag">Performance Optimization</span>
+              <span class="step-tag">Vercel Handoff</span>
+              <span class="step-tag">Ongoing Support</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. SERVICES & SUPPORT SECTION -->
+    <section id="services" class="section-padding">
+      <div class="container">
+        
+        <h2 class="section-title reveal">Your Project, <br>Supported</h2>
+        <p class="section-subtitle reveal">
+          End-to-end digital support to keep your web presence sharp, fast, and converting visitors into clients.
+        </p>
+
+        <div class="support-grid">
+          
+          <div class="support-card glass-card reveal">
+            <div class="support-user-badge">
+              <div class="user-avatar custom-user-avatar"></div>
+              <div>
+                <div class="user-name">Afzal Ehsan</div>
+                <div class="user-status font-mono">● Direct WhatsApp Access</div>
+              </div>
+            </div>
+            <p class="support-desc">Direct 1-on-1 collaboration with no middleman for fast communication and deployment.</p>
+          </div>
+
+          <div class="support-card glass-card reveal">
+            <h3 class="support-card-title">Design Systems & Kits</h3>
+            <p class="support-desc">Reusable Figma design components and clean code architecture for fast scaling.</p>
+            <a href="https://wa.me/918303283392?text=Hello%20Afzal%2C%20I%20came%20across%20your%20portfolio%20website%20%28Arshu%20Studio%29.%20I%20am%20interested%20in%20collaborating%20on%20a%20web%20development%20and%20UI%2FUX%20design%20project%20with%20you.%20Let%27s%20connect%20and%20discuss%20the%20project%20requirements%2C%20timeline%2C%20and%20scope." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline mt-16">
+              Inquire Now
+            </a>
+          </div>
+
+          <div class="support-card glass-card support-efficiency-card reveal">
+            <div class="efficiency-header">
+              <span class="eff-icon font-orange">❖</span>
+              <span class="eff-title">Arshu Studio Standard</span>
+            </div>
+            <div class="eff-gauge font-mono">100% <span class="eff-sub">Client Dedicated</span></div>
+            <ul class="eff-list">
+              <li>✓ Optimized for mobile & desktop</li>
+              <li>✓ Fast Supabase data integration</li>
+              <li>✓ Clean code & SEO best practices</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. GLOWING LIGHT ARCS CTA SECTION -->
+    <section id="cta" class="cta-section">
+      <div class="glowing-arc glowing-arc-top"></div>
+      
+      <div class="container cta-container">
+        <h2 class="cta-title reveal">Let's Turn Ideas <br>Into Experiences</h2>
+        <p class="cta-subtitle reveal">
+          Ready to build your next web platform, UI/UX design, or automation workflow? Connect with me directly on WhatsApp.
+        </p>
+        <a href="https://wa.me/918303283392?text=Hello%20Afzal%2C%20I%20came%20across%20your%20portfolio%20website%20%28Arshu%20Studio%29.%20I%20am%20interested%20in%20collaborating%20on%20a%20web%20development%20and%20UI%2FUX%20design%20project%20with%20you.%20Let%27s%20connect%20and%20discuss%20the%20project%20requirements%2C%20timeline%2C%20and%20scope." target="_blank" rel="noopener noreferrer" class="btn btn-lg btn-orange btn-glow reveal">
+          Get Started <span class="arrow-icon">→</span>
+        </a>
+      </div>
+
+      <div class="glowing-arc glowing-arc-bottom"></div>
+    </section>
+
+    <!-- 8. FOOTER SECTION (WITH RESUME LINKS & SOCIALS) -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        
+        <div class="footer-col footer-brand-col">
+          <a href="#" class="nav-logo">
+            <span class="logo-mark">❖</span>
+            <span class="logo-text">AFZAL EHSAN</span>
+          </a>
+          <p class="footer-desc">
+            <strong>Arshu Studio</strong> — Web Development, UI/UX Design, and Digital Product Automation by Afzal Ehsan.
+          </p>
+          <a href="https://wa.me/918303283392?text=Hello%20Afzal%2C%20I%20came%20across%20your%20portfolio%20website%20%28Arshu%20Studio%29.%20I%20am%20interested%20in%20collaborating%20on%20a%20web%20development%20and%20UI%2FUX%20design%20project%20with%20you.%20Let%27s%20connect%20and%20discuss%20the%20project%20requirements%2C%20timeline%2C%20and%20scope." target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-orange">
+            Contact Me →
+          </a>
+        </div>
+
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <div class="footer-heading">Navigation</div>
+            <ul class="footer-links">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#services">Services</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-heading">Socials</div>
+            <ul class="footer-links">
+              <li><a href="https://www.instagram.com/lift_.arshu13?igsi=MXNyMnlhMHB6dmh2Zg==" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/afzal-ehsan-44a31741b" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://wa.me/918303283392?text=Hello%20Afzal%2C%20I%20came%20across%20your%20portfolio%20website%20%28Arshu%20Studio%29.%20I%20am%20interested%20in%20collaborating%20on%20a%20web%20development%20and%20UI%2FUX%20design%20project%20with%20you.%20Let%27s%20connect%20and%20discuss%20the%20project%20requirements%2C%20timeline%2C%20and%20scope." target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <div class="footer-heading">Contact</div>
+            <p class="footer-address">
+              afzalsiddiqui12x@gmail.com <br>
+              +91 8303283392 <br>
+              Lucknow, Uttar Pradesh
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom container">
+        <span>© 2026 AFZAL EHSAN (Arshu Studio). All rights reserved.</span>
+        <span>Crafted for Humans</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
