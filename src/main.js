@@ -34,7 +34,7 @@ function getFramePath(index) {
     folder = 'part3';
   }
   
-  return `/frames/${folder}/frame_${padded}.jpg`;
+  return `/${folder}/frame_${padded}.jpg`;
 }
 
 // Canvas Sizing and High-DPI Crisp Rendering
