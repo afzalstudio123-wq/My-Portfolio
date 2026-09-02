@@ -4,10 +4,6 @@ node_modules/
 # Production build outputs
 dist/
 
-# Raw archives and temporary reference files
-video_frames_compressed.zip
-*.jfif
-
 # Local env files
 .env
 .env.local

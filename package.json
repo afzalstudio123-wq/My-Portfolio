@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npx vite build && node -e \"const fs=require('fs'); ['part1','part2','frames','public'].forEach(d => fs.existsSync(d) && fs.cpSync(d, 'dist/'+d, {recursive: true})); fs.readdirSync('.').filter(f => f.startsWith('frame_')).forEach(f => fs.copyFileSync(f, 'dist/'+f));\"",
     "preview": "vite preview"
   },
   "devDependencies": {

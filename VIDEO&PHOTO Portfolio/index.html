@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFZAL EHSAN — Digital Marketer, Influencer, Video Editor & Photographer</title>
+  <!-- Google Fonts: Syne, Outfit, Caveat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-content">
+      <div class="loader-brand">AFZAL EHSAN<span>.</span></div>
+      <div class="progress-bar-container">
+        <div id="progress-bar"></div>
+      </div>
+      <div class="loader-status">
+        <span id="progress-text">0%</span>
+        <span class="loading-label">LOADING 3D BACKGROUND</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Background Scroll-Driven Canvas -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="canvas-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-left">
+      <span class="brand-logo">AFZAL EHSAN — MEDIA & DIGITAL</span>
+      <span class="nav-divider"></span>
+    </div>
+    <div class="nav-right">
+      <div class="status-badge">
+        <span class="status-dot"></span>
+        <span>AVAILABLE FOR COLLABORATIONS</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Scrollable Content Container -->
+  <main id="main-content">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <!-- Background Giant Watermark -->
+      <div class="hero-watermark">AFZAL EHSAN</div>
+      
+      <div class="hero-container">
+        <!-- Left Content -->
+        <div class="hero-intro">
+          <span class="script-greeting">Hello, I'm</span>
+          <h1 class="hero-name">
+            AFZAL<br>
+            EHSAN
+          </h1>
+          <div class="hero-subtitle">DIGITAL MARKETER & CREATOR</div>
+          <div class="hero-tagline">VIDEO EDITOR • PHOTOGRAPHER • WEB DEVELOPER</div>
+          <p class="hero-description">
+            I craft high-impact digital marketing campaigns, engaging video content, cinematic videography & photography, and modern web experiences that build strong brand presence.
+          </p>
+          <div class="location-badge">
+            <svg class="location-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            <span>BASED IN: LUCKNOW, UTTAR PRADESH</span>
+          </div>
+        </div>
+
+        <!-- Center Interactive Media Badge Showcase -->
+        <div class="hero-photo-wrapper">
+          <div class="photo-glow"></div>
+          <div class="creator-media-card">
+            <div class="card-glass-header">
+              <span class="pulse-rec">REC ●</span>
+              <span class="resolution-tag">4K 60FPS</span>
+            </div>
+            <div class="card-media-visual">
+              <div class="camera-lens-ring">
+                <div class="inner-lens">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                </div>
+              </div>
+              <div class="media-skills-bar">
+                <span>DIGITAL MARKETING</span>
+                <span>•</span>
+                <span>INFLUENCING</span>
+                <span>•</span>
+                <span>VIDEOGRAPHY</span>
+              </div>
+            </div>
+            <div class="card-creator-footer">
+              <div class="creator-avatar">AE</div>
+              <div>
+                <strong>AFZAL EHSAN</strong>
+                <p>Digital Creator & Strategist</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Features / Stats -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <div class="stat-text">
+              <span class="stat-label">EXPERIENCE</span>
+              <span class="stat-value">3+ YEARS</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+            </div>
+            <div class="stat-text">
+              <span class="stat-label">SPECIALIZED IN</span>
+              <span class="stat-value">VIDEO EDITING<br>DIGITAL MARKETING</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            </div>
+            <div class="stat-text">
+              <span class="stat-label">MEDIA CREATION</span>
+              <span class="stat-value">PHOTOGRAPHY &<br>VIDEOGRAPHY</span>
+            </div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <div class="stat-text">
+              <span class="stat-label">WORKING</span>
+              <span class="stat-value">NATIONWIDE &<br>REMOTE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEDICATED CLIENTS & CREATOR COLLABORATIONS SECTION -->
+    <section id="clients-section" class="section-padding">
+      <div class="section-header">
+        <div>
+          <span class="sub-heading red-text">PROVEN RESULTS & CREATOR PARTNERSHIPS</span>
+          <h2 class="section-title">CLIENTS & COLLABORATIONS</h2>
+        </div>
+        <button class="section-link clients-view-trigger" data-filter="client">VIEW ALL 12 CLIENTS <span class="arr">›</span></button>
+      </div>
+
+      <div class="clients-grid">
+        <!-- Client Highlight 1: Himuprayagi -->
+        <div class="client-card" data-client-id="client-1">
+          <div class="client-ratio-box">
+            <img src="/clients/WhatsApp Image 2026-09-02 at 21.50.37 (1).jpeg" alt="Himuprayagi Collab" class="client-img" />
+          </div>
+          <div class="client-info-bar">
+            <span class="client-badge">477K+ SUBSCRIBERS</span>
+            <h4>Himuprayagi Creator Collab</h4>
+            <p>Digital marketing & campaign strategy for YouTube creator</p>
+          </div>
+        </div>
+
+        <!-- Client Highlight 2: Profile Campaign 01 -->
+        <div class="client-card" data-client-id="client-2">
+          <div class="client-ratio-box">
+            <img src="/clients/WhatsApp Image 2026-09-02 at 21.50.36.jpeg" alt="Client Campaign 01" class="client-img" />
+          </div>
+          <div class="client-info-bar">
+            <span class="client-badge">CLIENT CAMPAIGN</span>
+            <h4>Khidmat Tour & Creator Collab</h4>
+            <p>Instagram audience growth & profile strategy</p>
+          </div>
+        </div>
+
+        <!-- Client Highlight 3: Profile Campaign 02 -->
+        <div class="client-card" data-client-id="client-3">
+          <div class="client-ratio-box">
+            <img src="/clients/WhatsApp Image 2026-09-02 at 21.50.37.jpeg" alt="Client Campaign 02" class="client-img" />
+          </div>
+          <div class="client-info-bar">
+            <span class="client-badge">BRAND PARTNERSHIP</span>
+            <h4>Kwmtvabhi & Creator Growth</h4>
+            <p>Social media audit and account promotion</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects & Campaigns Section -->
+    <section id="projects" class="section-padding">
+      <div class="section-header">
+        <h2 class="section-title">PROJECTS & CAMPAIGNS</h2>
+        <button class="section-link view-all-trigger" data-filter="all">VIEW ALL PROJECTS <span class="arr">›</span></button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card view-all-trigger" data-filter="web">
+          <div class="project-num">01</div>
+          <div class="project-image-box">
+            <div class="project-preview p-1">
+              <div class="preview-mockup-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="preview-content dark-theme">
+                <div class="mock-tag">SERVICE MARKETPLACE</div>
+                <h3>LakhnaviSewa</h3>
+                <p style="font-size:0.75rem; color:#94a3b8; margin-top:4px;">Flutter, Supabase, Local Booking Flow & Digital Brand Strategy</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">LAKHNAVI SEWA</h3>
+            <span class="project-cat">APP & BRAND STRATEGY</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card view-all-trigger" data-filter="web">
+          <div class="project-num">02</div>
+          <div class="project-image-box">
+            <div class="project-preview p-2">
+              <div class="preview-mockup-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="preview-content light-theme">
+                <div class="mock-tag">E-COMMERCE & SEO</div>
+                <h3>IWAYMALL</h3>
+                <p style="font-size:0.75rem; color:#475569; margin-top:4px;">Next.js, Supabase, SEO Auditing & Digital Growth Strategy</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">IWAYMALL</h3>
+            <span class="project-cat">E-COMMERCE & DIGITAL MARKETING</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card view-all-trigger" data-filter="video">
+          <div class="project-num">03</div>
+          <div class="project-image-box">
+            <div class="project-preview p-3">
+              <div class="preview-mockup-header">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="preview-content sleek-dark">
+                <div class="mock-tag">VIDEO EDITING & MEDIA</div>
+                <h3>Cinematic Reels & Photography</h3>
+                <p style="font-size:0.75rem; color:#94a3b8; margin-top:4px;">High-Impact Reels, UGC Concepts, Videography & Creator Collabs</p>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">CINEMATIC MEDIA</h3>
+            <span class="project-cat">VIDEO EDITING & PHOTOGRAPHY</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education, Skills & Process Section -->
+    <section id="experience-process" class="section-padding">
+      <div class="three-col-grid">
+        
+        <!-- Column 1: Education & Skills -->
+        <div class="grid-card flex-col">
+          <h3 class="card-heading">EDUCATION & SKILLS</h3>
+          
+          <div class="sub-block">
+            <h4 class="sub-heading red-text">EDUCATION</h4>
+            <div class="edu-item">
+              <div class="edu-bullet">•</div>
+              <div>
+                <strong class="edu-title">Bachelor of Computer Applications (BCA)</strong>
+                <p class="edu-subtitle">University of Lucknow | Currently Pursuing</p>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-bullet">•</div>
+              <div>
+                <strong class="edu-title">Class 12th — 78%</strong>
+                <p class="edu-subtitle">Class 10th — 70%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-block">
+            <h4 class="sub-heading red-text">SKILLS & EXPERTISE</h4>
+            <div class="skills-wrap">
+              <span class="skill-pill">DIGITAL MARKETING</span>
+              <span class="skill-pill">SEO AUDITING</span>
+              <span class="skill-pill">VIDEO EDITING</span>
+              <span class="skill-pill">PHOTOGRAPHY</span>
+              <span class="skill-pill">VIDEOGRAPHY</span>
+              <span class="skill-pill">UGC CONCEPTS</span>
+              <span class="skill-pill">CREATOR COLLAB</span>
+              <span class="skill-pill">SOCIAL MEDIA STRATEGY</span>
+              <span class="skill-pill">CONTENT STRATEGY</span>
+              <span class="skill-pill">FIGMA / UI/UX</span>
+              <span class="skill-pill">REACT.JS / NEXT.JS</span>
+              <span class="skill-pill">SUPABASE / FLUTTER</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Work Process -->
+        <div class="grid-card flex-col">
+          <h3 class="card-heading">CREATIVE PROCESS</h3>
+          
+          <div class="process-list">
+            <div class="process-step">
+              <div class="step-num">01</div>
+              <div class="step-details">
+                <strong>DISCOVER</strong>
+                <p>Analyze target audience, market trends & client requirements</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-num">02</div>
+              <div class="step-details">
+                <strong>STRATEGY</strong>
+                <p>Plan content strategy, SEO auditing & creative campaign concepts</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-num">03</div>
+              <div class="step-details">
+                <strong>CREATE</strong>
+                <p>Execute high-quality videography, photography & video editing</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-num">04</div>
+              <div class="step-details">
+                <strong>ENGAGE</strong>
+                <p>Optimize social media distribution, UGC & creator collabs</p>
+              </div>
+            </div>
+            <div class="process-step">
+              <div class="step-num">05</div>
+              <div class="step-details">
+                <strong>DELIVER</strong>
+                <p>Test, optimize performance, track ROI & deliver final assets</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3: Quote / Philosophy Card -->
+        <div class="grid-card testimonial-card">
+          <div class="quote-mark">“</div>
+          <blockquote class="quote-text">
+            Great content and strategy don't just look visually stunning — they communicate, connect with audiences, and drive real growth.
+          </blockquote>
+          <div class="quote-author">
+            <span class="author-signature">Afzal Ehsan</span>
+            <span class="author-role">Digital Creator & Strategist</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact & Footer Section -->
+    <section id="contact" class="section-padding contact-section">
+      <div class="contact-grid">
+        <div class="contact-left">
+          <h2 class="contact-heading">LET’S WORK<br>TOGETHER <span class="red-dot">●</span></h2>
+          <p class="contact-desc">
+            I'm always open to new digital marketing campaigns, video editing projects, photography shoots, brand collaborations, and web product development.
+          </p>
+
+          <div class="contact-links">
+            <a href="tel:8303283392" class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+91 8303283392</span>
+            </a>
+            <a href="mailto:afzalsiddiqui12x@gmail.com" class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <span>afzalsiddiqui12x@gmail.com</span>
+            </a>
+            <a href="https://linkedin.com/in/afzal-ehsan-44a31741b" target="_blank" class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <span>linkedin.com/in/afzal-ehsan</span>
+            </a>
+            <a href="https://wa.me/918303283392" target="_blank" class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              <span>Connect on WhatsApp</span>
+            </a>
+            <div class="contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Lucknow, Uttar Pradesh</span>
+            </div>
+          </div>
+
+          <a href="mailto:afzalsiddiqui12x@gmail.com" class="cta-button">
+            <div class="cta-circle">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+            </div>
+            <span>LET'S CREATE SOMETHING AMAZING</span>
+          </a>
+        </div>
+
+        <div class="contact-right">
+          <div class="mockup-stage">
+            <div class="laptop-frame">
+              <div class="laptop-screen">
+                <div class="mock-content">
+                  <span class="mock-badge">DIGITAL MARKETER & CREATOR</span>
+                  <h2>VIDEO EDITOR & PHOTOGRAPHER</h2>
+                </div>
+              </div>
+              <div class="laptop-base"></div>
+            </div>
+            <div class="phone-frame">
+              <div class="phone-screen"></div>
+            </div>
+            <div class="mug-graphic">AE</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
